@@ -1,0 +1,133 @@
+/*Background Styles*/
+
+/* Home Page */
+
+div.title {
+    background: url('../background/green_background.jpg'), rgba(59, 59, 59, 0.432);
+    background-attachment: fixed;
+}
+
+div.about {
+    background: url('../background/darkbackground.jpg'), rgba(44, 44, 44, 0.5);
+    background-attachment: fixed;
+}
+
+div.secondary {
+    background: url('../background/acsbrbackground.jpg'), rgba(0, 0, 0, 0.719);
+    background-attachment: fixed;
+}
+
+div.sp-div {
+    background: url('../background/spbackground.jpg'), rgba(0, 0, 0, 0.719);
+    background-attachment: fixed;
+}
+
+div.career-div {
+    background: url('../background/coding_background.jpg'), rgba(0, 0, 0, 0.719);
+    background-attachment: fixed;
+}
+
+div.feedback-div {
+    background: url('../background/white_background.jpg'), rgba(185, 185, 185, 0.719);
+    background-attachment: unset;
+}
+
+/* About Page */
+
+div.about-title {
+    background: url('../background/astronaut.jpg'), rgba(37, 37, 37, 0.74);
+    background-attachment: fixed;
+}
+
+div.about-me {
+    background-color: rgb(37, 37, 37)
+}
+
+div.about-hobbies {
+    background: url('../background/darkbackground.jpg'), rgba(0, 0, 0, 0.719);
+    background-attachment: fixed;
+}
+
+div.about-career {
+    background: linear-gradient(rgb(22, 136, 71), rgb(0, 87, 0))
+}
+
+/* Secondary School Page */
+
+div.secondary-title {
+    background: url('../background/acsbrbackground.jpg'), rgba(0, 0, 0, 0.719);
+    background-attachment: fixed;
+}
+
+div.secondary-about {
+    background-color: black;
+}
+
+div.cca1 {
+    background-image: url("../background/cyberpunk_shiba_light.jpg");
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+}
+
+div.cca2, .career {
+    background: linear-gradient(rgb(59, 138, 82), rgb(23, 107, 59));
+}
+
+/* SP Page */
+
+div.sp-title {
+    background: url('../background/spbackground.jpg'), rgba(0, 0, 0, 0.719);
+    background-attachment: fixed;
+}
+
+div.sp {
+    background: linear-gradient(rgb(255, 116, 116), rgb(255, 85, 85))
+}
+
+div.sp-timetable {
+    background-color: gray;
+}
+
+div.soc {
+    text-align: right;
+    background-color: black;
+    vertical-align: middle;
+    padding: 50px;
+}
+
+/* Career Page */
+
+div.career-title {
+    background: url("../background/coding_background.jpg"), rgba(0, 0, 0, 0.719);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div.career-areas {
+    background-color: rgba(29, 29, 29, 0.884)
+}
+
+div.cybernsf {
+    background: url("../background/coding_background2.jpg"), rgba(0, 0, 0, 0.719);
+    background-attachment: fixed;
+}
+
+/* Feedback Page */
+
+div.feedback {
+    background: url('../background/white_background.jpg');
+    background-attachment: fixed;
+}
+
+div#more {
+    background-color: black;
+}
+
+div.background {
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

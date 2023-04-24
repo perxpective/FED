@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css_files/background.css">
+    <link rel="stylesheet" href="../css_files/styles.css">
+    <link rel="stylesheet" href="../css_files/form.css">
+    <link rel="shortcut icon" type="image/jpg" href="../icons/website_logo.png" />
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    
+    <!--Animate.css CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <!-- CSS Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        
+    <script src="../js_files/formvalidate.js"></script>
+    
+    <title>Feedback</title>
+    <!--
+        Note: Website icon created by me using Photoshop, no attribution is required
+        All icons are sourced from icons8.com
+    -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <a href="index.html" class="navbar-brand"><img src="../icons/website_logo.png" alt="website_logo"
+                class="logo d-inline-block align-top"></a>
+        <button class="navbar-toggler" role="button" data-toggle="collapse" data-target="#navigationbar" aria-controls="navigationbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigationbar">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="animate__animated animate__backInDown nav-item"><a href="about.html">About Me</a></li>
+                <li class="animate__animated animate__backInDown nav-item"><a href="secondary.html">Experience in Secondary School</a></li>
+                <li class="animate__animated animate__backInDown nav-item"><a href="sp.html">Experience in SP</a></li>
+                <li class="animate__animated animate__backInDown nav-item"><a href="career.html">Career Prospects</a></li>
+                <li class="animate__animated animate__backInDown nav-item"><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <!--Title Div-->
+        <!--Background Image is created by me using Photoshop.-->
+        <div class="feedback background jumbotron-fluid jumbotron text-center">
+            <img src="../icons/feedback.png" alt="feedback icon" width="128" height="128">
+            <p class="display-4 text-dark">Feedback</p>
+            <a class="badge badge-warning" href="#more">Scroll Down</a>
+        </div>
+        <!--Form Div-->
+        <div id="more" class="p-0 p-sm-4 pt-5">
+            <p class="h1">Do let me know what you think about my website!</p>
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-xs-12 form-group">
+                        <!--Name Input-->
+                        <label>First Name</label>
+                        <br>
+                        <input class="form-control" type="text" name="first-name" placeholder="Type Name Here" required>
+                        <div class="invalid-feedback">
+                            Please fill in your first name
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-xs-12 form-group">
+                        <label>Last Name</label>
+                        <br>
+                        <input class="form-control" type="text" name="last-name" placeholder="Type Name Here" required>
+                        <div class="invalid-feedback">
+                            Please fill in your last name
+                        </div>
+                    </div>   
+                    <div class="col-lg-4 col-md-6 col-xs-12 form-group">
+                        <!--Calendar Input-->
+                        <label>Date of Birth</label>
+                        <br>
+                        <input class="form-control" type="date" name="dob" required>
+                        <div class="invalid-feedback">
+                            Please fill in your date of birth
+                        </div>
+
+                    </div>                              
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-xs-12 form-group" id="email">
+                        <!--Email Input-->
+                        <label>Email Address</label>
+                        <br>
+                        <input class="form-control" type="email" name="email" placeholder="Type Email Here" required>
+                        <div class="invalid-feedback">
+                            Please fill in your email address
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-xs-12 form-group">
+                        <!--Phone Input-->
+                        <label>Phone Number</label>
+                        <br>
+                        <input class="form-control" type="tel" name="number" placeholder="Type Number Here"  required>
+                        <div class="invalid-feedback">
+                            Please fill in your phone number
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-xs-12 form-group" id="select">
+                        <!--Dropdown Input-->
+                        <label>Are you a...</label>
+                        <br>
+                        <select class="form-control" name="student-or-parent" >
+                            <option value="student">Student</option>
+                            <option value="Parent">Parent</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select one option
+                        </div>
+                    </div>                    
+                </div>
+                <div>
+                    <label>If student, please state your level:</label>
+                    <br>
+                    <select class="form-control" name="level">
+                        <option>Select...</option>
+                        <option value="Sec 1">Secondary 1</option>
+                        <option value="Sec 2">Secondary 2</option>
+                        <option value="Sec 3">Secondary 3</option>
+                        <option value="Sec 4">Secondary 4</option>
+                        <option value="Sec 5">Secondary 5</option>
+                        <option value="ITE Nitec">ITE Nitec</option>
+                        <option value="ITE Higher Nitec">ITE Higher Nitec</option>
+                    </select>           
+                    <div class="invalid-feedback">
+                        Please select one option
+                    </div>
+                </div>
+
+                <!--Radio Input-->
+                <div id="radio">
+                    <label>Rate this website</label>
+                    <br>
+                    <br>
+                    <div class="row text-center">
+                        <div class="col-md">
+                            <label>Mediocre</label>
+                        </div>
+                        <div class="col-md">
+                            <input type="radio" name="radio1" value="1" required><br>
+                            <label style="text-align:center;">1</label>
+                        </div>
+                        <div class="col-md">
+                            <input type="radio" name="radio1" value="2"><br>
+                            <label style="text-align:center;">2</label>
+                        </div>
+                        <div class="col-md">
+                            <input type="radio" name="radio1" value="3"><br>
+                            <label style="text-align:center;">3</label>
+                        </div>
+                        <div class="col-md">
+                            <input type="radio" name="radio1" value="4"><br>
+                            <label style="text-align:center;">4</label>
+                        </div>
+                        <div class="col-md">
+                            <input type="radio" name="radio1" value="5"><br>
+                            <label style="text-align:center;">5</label>
+                        </div>
+                        <div class="col-md">
+                            <label>Excellent</label>
+                            <div class="invalid-feedback">
+                                Please select one option
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Checkbox Inputs-->
+                <div class="checkbox">
+                    <label>How did you find out about this website?</label>
+                    <br>
+                    <input type="checkbox" name="checkbox1" value="Friends">
+                    <label>Friends</label>
+                    <br>
+                    <input type="checkbox" name="checkbox1" value="Family/Relatives" >
+                    <label>Family/Relatives</label>
+                    <br>
+                    <input type="checkbox" name="checkbox1" value="School" >
+                    <label>School</label>
+                    <br>
+                    <input type="checkbox" name="checkbox1" value="Social Media" >
+                    <label>Social Media</label>
+                    <br>
+                    <input type="checkbox" name="checkbox1" value="Search Engine" >
+                    <label>Search Engine</label>
+                    <br>
+                    <input type="checkbox" name="checkbox1" value="Others">
+                    <label>Others (Please Specify)</label>
+                    <input type="text" name="others" placeholder="Text Goes Here" >
+                </div>
+                <div class="checkbox">
+                    <label>What did you like about the website?</label>
+                    <br>
+                    <input type="checkbox" name="checkbox2" value="aesthetics">
+                    <label>Aesthetics of the Website</label>
+                    <br>
+                    <input type="checkbox" name="checkbox2" value="ui">
+                    <label>Website UI</label>
+                    <br>
+                    <input type="checkbox" name="checkbox2" value="content">
+                    <label>Webpage Content</label>
+                    <br>
+                    <input type="checkbox" name="checkbox2" value="Social Media">
+                    <label>Easy website navigation</label>
+                </div>
+                <div id="color">
+                    <!--Color Input-->
+                    <label>Random Question: What is your favourite color?</label>
+                    <input type="color" name="color-picker" value="#ffffff">
+
+                </div>
+                <div id="feedback">
+                    <!--Textarea Input-->
+                    <label>Any other feedback or suggestions you would like to make?</label>
+                    <br>
+                    <br>
+                    <textarea name="feedback" rows="9" cols="100"></textarea>
+                </div>
+                <div class="checkbox form-group">
+                    <input type="checkbox" name="checkbox11" value="agree" required>
+                    By checking this box, you agree to allow your personal information to be used solely for statistical purposes and the improvement of this website. Your personal information will be kept confidential.
+                    <div class="invalid-feedback">
+                        Please check this box to agree.
+                    </div>
+                </div>
+                <div>
+                    <!--Submit button-->
+                    <input type="submit" class="button" style="margin:20px;">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!--Footer Div-->
+    <footer>
+        <ul>
+            <li><a href="tel:+659123467" target="_blank"><i class="fas fa-phone fa-2x" style="color:white;"></i></a>
+                <div class="d-none d-lg-block">&nbsp;&nbsp;+65 9123 4567</div>
+            </li>
+            <li><a href="mailto:ervinleequanjun@outlook.com?subject=Enquiries" target="_blank"><i class="fas fa-envelope fa-2x" style="color:white;"></i></a>
+                <div class="d-none d-lg-block">&nbsp;&nbsp;&nbsp;ervinleequanjun@outlook.com</div>
+            </li>
+            <li><a href="https://instagram.com/perxpective.jpeg" target="_blank"><i class="fab fa-instagram fa-2x" style="color:white;"></i></a>
+                <div class="d-none d-lg-block">&nbsp;&nbsp;@perxpective.jpeg</div>
+            </li>
+            <li><a href="https://discord.com/channels/@me" target="_blank"><i class="fab fa-discord fa-2x" style="color:white;"></i></a>
+                <div class="d-none d-lg-block">&nbsp;&nbsp;Perspective #9963</div>
+            </li>
+            <li><a href="https://github.com/perxpective" target="_blank"><i class="fab fa-github fa-2x" style="color:white;"></i></a>
+                <div class="d-none d-lg-block">&nbsp;&nbsp;perxpective</div>
+            </li>
+        </ul>
+        <p>&copy;perxpective 2021 | Ervin Lee</p>
+    </footer>
+</body>
+
+</html>
